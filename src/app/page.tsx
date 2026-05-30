@@ -35,10 +35,10 @@ export default function Home() {
               </Link>
             ) : (
               <>
-                <Link href="/login" className="btn-secondary">
+                <Link href="/auth/login" className="btn-secondary">
                   로그인
                 </Link>
-                <Link href="/signup" className="btn-primary">
+                <Link href="/auth/signup" className="btn-primary">
                   시작하기
                 </Link>
               </>
@@ -59,7 +59,7 @@ export default function Home() {
             찻집 방문 기억을 남겨보세요.
           </p>
           {!user && (
-            <Link href="/signup" className="btn-primary inline-block text-lg px-8 py-3">
+            <Link href="/auth/signup" className="btn-primary inline-block text-lg px-8 py-3">
               무료로 시작하기
             </Link>
           )}

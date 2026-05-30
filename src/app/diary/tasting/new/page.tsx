@@ -320,7 +320,7 @@ export default function NewTastingNotePage() {
                     type="range"
                     min="0"
                     max="5"
-                    value={formData.data.flavor_intensity[key as keyof typeof formData.data.flavor_intensity]}
+                    value={formData.data.flavor_intensity[key as keyof typeof formData.data.flavor_intensity] || 0}
                     onChange={(e) =>
                       setFormData({
                         ...formData,

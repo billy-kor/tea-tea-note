@@ -296,7 +296,7 @@ export default function EditTearoomVisitPage() {
                     type="range"
                     min="0"
                     max="5"
-                    value={formData.data[key as keyof typeof formData.data]}
+                    value={(formData.data[key as keyof typeof formData.data] as number) || 0}
                     onChange={(e) =>
                       setFormData({
                         ...formData,
